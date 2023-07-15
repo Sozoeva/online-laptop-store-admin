@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+        Admin
+    </header>
+
+    <main>
+        <div class="addBtnWrapper">
+            <button class="addLaptopBtn">Add new Laptop</button>
+        </div>
+
+        <div class="cards"></div>
+    </main>
+
+    <div class="cartModal cartModalHidden">
+
+        <div class="cartModal-content">
+            <div class="cartModal-header">
+                <h1>ADD NEW LAPTOP</h1>
+                <button class="cartCloseBtn">Close</button>
+            </div>
+            <div class="cartModal-body">
+                <form>
+                    <input type="text" name="name" placeholder="Name" class="formItem">
+                    <textarea name="description" placeholder="Description..." rows="5" class="formItem"></textarea>
+                    <input type="number" name="price" placeholder="Price" class="formItem">
+                    <select name="brand" class="formItem">
+                        <option value="" selected >Choose brand of laptop</option>
+                        <option value="ACER">ACER</option>
+                        <option value="APPLE">APPLE</option>
+                        <option value="ASUS">ASUS</option>
+                        <option value="HP">HP</option>
+                        <option value="SAMSUNG">SAMSUNG</option>
+                        <option value="DELL">DELL</option>
+                        <option value="LENOVO">LENOVO</option>
+                    </select>
+                    <input type="text" name="image" placeholder="Image URL" class="formItem">
+
+                    <button class="modalAddBtn">ADD</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
